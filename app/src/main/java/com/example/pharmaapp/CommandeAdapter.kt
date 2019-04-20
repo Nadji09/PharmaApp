@@ -1,6 +1,7 @@
 package com.example.pharmaapp
 
 import android.content.Context
+import android.graphics.Color
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -29,7 +30,23 @@ class CommandeAdapter(val ctx: Context, val items: List<Commande>): BaseAdapter(
 
         viewHolder.nom_date.setText(items.get(position).nom_date)
         viewHolder.pharmacie.setText(items.get(position).pharmacy)
-        viewHolder.etat.setText(items.get(position).etat.toString())
+        when ( items.get(position).etat ){
+            Etat.ENATTENTE -> {
+                viewHolder.etat.setText("En attente")
+                viewHolder.etat.setTextColor(Color.parseColor("#E67E2E"))
+                }
+            Etat.TRAITEE ->{
+                viewHolder.etat.setText("Traitée")
+                viewHolder.etat.setTextColor(Color.parseColor("#2E91AA"))
+            }
+
+            Etat.REJETEE ->{
+                viewHolder.etat.setText("Rejetée")
+                viewHolder.etat.setTextColor(Color.parseColor("#BD473A"))
+            }
+
+        }
+
         return view
     }
 
