@@ -9,7 +9,7 @@ import android.widget.TextView
 
 class CommandeAdapter(val ctx: Context, val items: List<Commande>): BaseAdapter() {
 
-    private class ViewHolder(val textView1: TextView)
+    private class ViewHolder(val nom_date: TextView, val pharmacie : TextView, val etat: TextView)
 
     override fun getView(position: Int, convertView: View?, parent: ViewGroup): View {
         var view = convertView
@@ -17,15 +17,19 @@ class CommandeAdapter(val ctx: Context, val items: List<Commande>): BaseAdapter(
         if (view == null) {
 
             view = LayoutInflater.from(ctx).inflate(R.layout.command_layout,parent,false)
-            val textView1 = view?.findViewById(R.id.nom_commande) as TextView
-            viewHolder = ViewHolder(textView1)
+            val nom = view?.findViewById(R.id.nom_date) as TextView
+            val pharmacie = view?.findViewById(R.id.pharmacie) as TextView
+            val etat = view?.findViewById(R.id.etat) as TextView
+            viewHolder = ViewHolder(nom,pharmacie,etat)
             view?.setTag(viewHolder)
 
         } else {
             viewHolder = view.tag as ViewHolder
         }
 
-        viewHolder.textView1.setText(items.get(position).nom)
+        viewHolder.nom_date.setText(items.get(position).nom_date)
+        viewHolder.pharmacie.setText(items.get(position).pharmacy)
+        viewHolder.etat.setText(items.get(position).etat.toString())
         return view
     }
 

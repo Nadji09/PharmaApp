@@ -2,4 +2,4 @@ package com.example.pharmaapp
 
 import java.util.*
 
-class Commande( val nom: String)
+class Commande( val nom_date : String, val pharmacy:String, var etat: Etat)
