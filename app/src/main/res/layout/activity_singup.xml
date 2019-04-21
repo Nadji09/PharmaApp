@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".Singup">
+
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"> <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <android.support.v7.widget.Toolbar
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@drawable/toolbar"
+                android:theme="?attr/actionBarTheme"
+                android:minHeight="?attr/actionBarSize" android:id="@+id/toolbar"
+                app:layout_constraintTop_toTopOf="parent"
+
+
+        />
+        <TextView
+                android:text="CRERE UN COMPTE"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView2"
+                android:layout_marginTop="35dp" app:layout_constraintTop_toBottomOf="@+id/toolbar"
+                app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="8dp"
+                android:layout_marginStart="8dp" app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginEnd="8dp" android:layout_marginRight="8dp"
+                android:textSize="20dp"
+                android:textColor="#2E96AA"
+                android:fontFamily="@font/eras"
+        />
+        <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:id="@+id/editText4"
+                android:layout_marginTop="40dp"
+                app:layout_constraintTop_toBottomOf="@+id/textView2" android:layout_marginStart="30dp"
+                app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="30dp"
+                android:layout_marginEnd="30dp" app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginRight="30dp"
+                android:textSize="15dp"
+                android:paddingLeft="10dp"
+                android:textColor="#6D6969"
+                android:fontFamily="@font/comic"
+                android:hint="Numéro de sécurité sociale"
+                android:backgroundTint="#2E96AA"
+                android:paddingBottom="10dp"
+
+                android:inputType="number"/>
+        <EditText
+                android:layout_width="0dp"
+                android:layout_height="43dp"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:id="@+id/editText5"
+                android:textSize="15dp"
+                android:textColor="#6D6969"
+                android:fontFamily="@font/comic"
+                android:hint="Nom"
+                android:backgroundTint="#2E96AA"
+                android:paddingBottom="10dp"
+                android:paddingLeft="10dp"
+                android:layout_marginTop="13dp"
+                app:layout_constraintTop_toBottomOf="@+id/editText4" android:layout_marginStart="30dp"
+                app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="30dp"
+                android:layout_marginEnd="30dp" app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginRight="30dp"/>
+        <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:id="@+id/editText6"
+                android:textSize="15dp"
+                android:textColor="#6D6969"
+                android:fontFamily="@font/comic"
+                android:hint="Prénom"
+                android:backgroundTint="#2E96AA"
+                android:paddingBottom="10dp"
+                android:layout_marginTop="13dp"
+                android:paddingLeft="10dp"
+                app:layout_constraintTop_toBottomOf="@+id/editText5" android:layout_marginStart="30dp"
+                app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="30dp"
+                android:layout_marginEnd="30dp" app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginRight="30dp"/>
+        <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:ems="10"
+                android:id="@+id/editText7"
+                android:textSize="15dp"
+                android:textColor="#6D6969"
+                android:fontFamily="@font/comic"
+                android:hint="Adresse"
+                android:backgroundTint="#2E96AA"
+                android:paddingLeft="10dp"
+                android:paddingBottom="10dp"
+                android:layout_marginTop="13dp"
+                app:layout_constraintTop_toBottomOf="@+id/editText6" android:layout_marginEnd="30dp"
+                app:layout_constraintEnd_toEndOf="parent" android:layout_marginRight="30dp"
+                android:layout_marginStart="30dp" app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginLeft="30dp"/>
+        <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:ems="10"
+                android:id="@+id/editText8"
+                android:textSize="14dp"
+                android:textColor="#6D6969"
+                android:fontFamily="@font/comic"
+                android:hint="Numéro de téléphone"
+                android:backgroundTint="#2E96AA"
+                android:paddingLeft="10dp"
+                android:paddingBottom="10dp"
+                android:layout_marginTop="13dp"
+                app:layout_constraintTop_toBottomOf="@+id/editText7" android:layout_marginStart="30dp"
+                app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="30dp"
+                android:layout_marginEnd="30dp" app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginRight="30dp"/>
+        <Button
+                android:text="CREER UN COMPTE"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/creercpt" android:layout_marginTop="40dp"
+                app:layout_constraintTop_toBottomOf="@+id/editText8" app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginEnd="35dp" android:layout_marginRight="35dp"
+                app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="35dp"
+                android:layout_marginStart="35dp"
+                android:background="@drawable/creercompte"
+                android:textColor="#EEE7E7"
+                android:textSize="14dp"
+                android:fontFamily="@font/comic"
+        />
+        <Button
+                android:text="Déjà inscrit ? Se connecter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/deja_inscrit" android:layout_marginTop="35dp"
+                app:layout_constraintTop_toBottomOf="@+id/creercpt" app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginLeft="8dp" android:layout_marginStart="8dp"
+                app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:background="#00000000"
+                android:textSize="8dp"
+                android:textStyle="bold"
+                android:textColor="#2E96AA"
+                android:fontFamily="@font/comic"
+        />
+    </android.support.constraint.ConstraintLayout>
+
+
+    </ScrollView>
+</android.support.constraint.ConstraintLayout>
