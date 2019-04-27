@@ -11,8 +11,8 @@ class MainActivity : AppCompatActivity() {
     //var btn = findViewById<View>(R.id.signup) as Button
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_pharmadetails)
-        /*newcpt.setOnClickListener{
+        setContentView(R.layout.activity_main)
+        newcpt.setOnClickListener{
             val intent = Intent(this,Singup::class.java)
             startActivity(intent)
         }
@@ -24,7 +24,7 @@ class MainActivity : AppCompatActivity() {
              var pwdview=inflater.inflate(R.layout.activity_pwd_popup,null)
              dia.setView(pwdview)
              dia.show()
-         }*/
+         }
 
     }
 

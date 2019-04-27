@@ -22,8 +22,8 @@ class Singup : AppCompatActivity() {
 
 
         deja_inscrit.setOnClickListener{
-            val intent = Intent(this,MainActivity::class.java)
-            startActivity(intent)
+            //val intent = Intent(this,MainActivity::class.java)
+            finish()
         }
 
     }
