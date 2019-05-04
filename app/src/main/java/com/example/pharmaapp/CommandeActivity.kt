@@ -1,4 +1,4 @@
-package com.example.pharmaapp
+/*package com.example.pharmaapp
 
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
@@ -28,4 +28,4 @@ private fun getData() : List<Commande> {
     list.add(Commande("Allergie, envoyée le 11/04/2019 à 11:40","Al Qods, Blida",Etat.ENATTENTE))
 
     return list
-}
+}*/
