@@ -1,5 +1,6 @@
 package com.example.pharmaapp
 
+import android.graphics.Color
 import android.support.v7.widget.RecyclerView
 import android.view.LayoutInflater
 import android.view.ViewGroup
@@ -38,7 +39,22 @@ class CommandeViewHolder(inflater: LayoutInflater, parent: ViewGroup) :
     fun bind(commande: Commande) {
         nom_date?.text = commande.nom_date
         pharmacie?.text = commande.pharmacy
-        etat?.text = commande.etat.toString()
+        when (commande.etat){
+            Etat.ENATTENTE ->{
+                etat?.text = "En Attente"
+                etat?.setTextColor(Color.parseColor("#E67E2E"))
+            }
+
+            Etat.REJETEE -> {
+                etat?.text = "Rejetée"
+                etat?.setTextColor(Color.parseColor("#BD473A"))
+            }
+
+            Etat.TRAITEE-> {
+                etat?.text = "Traitée"
+                etat?.setTextColor(Color.parseColor("#2E91AA"))
+            }
+        }
     }
 
 }
