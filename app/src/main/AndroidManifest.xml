@@ -9,6 +9,9 @@
             android:roundIcon="@mipmap/ic_launcher_round"
             android:supportsRtl="true"
             android:theme="@style/AppTheme">
+        <activity android:name=".CommandePharmacieActivity">
+
+        </activity>
         <activity
                 android:name=".Main2Activity"
                 android:label="@string/title_activity_main2">
@@ -19,7 +22,6 @@
             </intent-filter>
         </activity>
         <activity android:name=".CommandeActivity">
-
         </activity>
         <activity android:name=".UploadActivity">
         </activity>

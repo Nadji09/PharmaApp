@@ -14,5 +14,6 @@
             android:scrollbars="vertical"
             app:layout_constraintTop_toTopOf="parent" app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintBottom_toBottomOf="parent" android:id="@+id/listCommandes"/>
+            app:layout_constraintBottom_toBottomOf="parent" android:id="@+id/listCommandes"
+    />
 </android.support.constraint.ConstraintLayout>
