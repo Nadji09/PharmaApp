@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                             xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+                                             android:layout_height="match_parent">
+    <android.support.v7.widget.RecyclerView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent"
+            android:id="@+id/listPharmacies" app:layout_constraintTop_toBottomOf="@+id/constraintLayout2"/>
+    <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:background="#437FBB"
+            android:id="@+id/constraintLayout2"
+            app:layout_constraintTop_toTopOf="parent" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+        <ImageView
+                android:layout_width="16dp"
+                android:layout_height="24dp" app:srcCompat="@drawable/menu_button_64"
+                android:id="@+id/imageView2" android:layout_marginTop="20dp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginLeft="17dp" android:layout_marginStart="17dp"/>
+        <SearchView
+                android:layout_width="250dp"
+                android:layout_height="36dp"
+                android:tooltipText="Ville choisie"
+                android:background="@drawable/search_background"
+                android:layoutDirection="rtl"
+                android:layout_marginTop="11dp"
+                app:layout_constraintTop_toTopOf="parent" android:layout_marginBottom="8dp"
+                app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintVertical_bias="0.0"
+                app:layout_constraintStart_toEndOf="@+id/imageView2" android:layout_marginLeft="30dp"
+                android:layout_marginStart="30dp"/>
+    </android.support.constraint.ConstraintLayout>
+</android.support.constraint.ConstraintLayout>
