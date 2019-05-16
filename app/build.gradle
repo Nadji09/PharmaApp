@@ -37,5 +37,6 @@ dependencies {
 
     api 'com.squareup.okhttp3:okhttp:3.2.0'
     implementation files('libs/twilio-7.9.1-jar-with-dependencies.jar')
+    implementation 'com.android.support:design:28.0.0'
 
 }
