@@ -151,7 +151,8 @@
                 <Button
                         android:text="Mes commandes"
                         android:layout_width="0dp"
-                        android:layout_height="wrap_content" android:id="@+id/button10" android:layout_weight="1"
+                        android:layout_height="wrap_content" android:id="@+id/CommandesButton"
+                        android:layout_weight="1"
                         android:textColor="#ffffff"
                         android:textSize="12dp"
                         android:fontFamily="@font/comic"
@@ -164,7 +165,8 @@
                 <Button
                         android:text="Nouvelle commande"
                         android:layout_width="0dp"
-                        android:layout_height="wrap_content" android:id="@+id/button9" android:layout_weight="1"
+                        android:layout_height="wrap_content" android:id="@+id/AddCommandeButton"
+                        android:layout_weight="1"
                         android:textColor="#ffffff"
                         android:textSize="12dp"
                         android:fontFamily="@font/comic"

@@ -13,7 +13,12 @@ class CommandePharmacieActivity : AppCompatActivity() {
         listePCommandes.layoutManager = LinearLayoutManager(this)
             // set the custom adapter to the RecyclerView
         listePCommandes.adapter = CommandeAdapter(getData())
+
+        ReturnButton.setOnClickListener {
+            finish()
         }
+    }
+
 
 
     fun getData() : List<Commande>{

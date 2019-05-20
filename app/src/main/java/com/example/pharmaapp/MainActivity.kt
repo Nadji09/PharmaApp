@@ -12,11 +12,16 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
         newcpt.setOnClickListener{
             val intent = Intent(this,Singup::class.java)
             startActivity(intent)
         }
 
+        Connecter.setOnClickListener{
+            val intent = Intent(this, Main2Activity::class.java)
+            startActivity(intent)
+        }
 
         forget_pwd.setOnClickListener{
             var dia =AlertDialog.Builder(this)
