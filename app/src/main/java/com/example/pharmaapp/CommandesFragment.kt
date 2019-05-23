@@ -29,6 +29,8 @@ class CommandesFragment: Fragment() {
             // set the custom adapter to the RecyclerView
             adapter = CommandeAdapter(getData())
         }
+
+
     }
 
     companion object {
